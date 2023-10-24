@@ -1,11 +1,82 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Hello, world!</title>
-  </head>
-  <body>
-    <h1>Hello, world!</h1>
-    <p>My first web page.</p>
-  </body>
-</html>
+<!DOCTYPE html>
+<head>
+    <title>chamburger</title>
+    <link rel="stylesheet" href="styling.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Red+Hat+Text&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+</head>
+
+<body>
+
+    <script>
+/* if u are like an actual coder and you read this i am so sorry */
+    function play() {
+    var audio = document.getElementById("music");
+    audio.play();
+    };
+
+       jQuery(document).ready(function($){
+
+$('#chimmy').on({
+     'click': function(){
+         $('#chimmy').attr('src','images/chimmy_2.png');
+     }
+ });
+
+const chimmer = document.querySelector(".chimmer");
+
+chimmer.addEventListener("click", () => {
+    chimmer.classList.toggle("chimani")
+});
+
+
+ $("#morebutton").click(function(){
+  $("#extra").fadeIn();
+  $("#moreinfo").fadeIn();
+  $("#enstars").hide();
+}); 
+
+$("#enstarbutton").click(function(){
+  $("#extra").fadeIn();
+  $("#enstars").fadeIn();
+  $("#moreinfo").hide();
+}); 
+
+});
+
+    </script>
+    <audio id="music" src="other/Apt 102 - Kirby's Epic Yarn.mp3"></audio>
+    <div id="allofu">
+    <div id="boxe" class="boxe">
+            <img id="chimmy" class="chimmer" src="images/chimmy_1.png" onclick="play();">
+            <p style="margin-top: 3px; margin-bottom: 0px;" id="subtitle">click on chimchar to play music</p>
+            <p style="margin-top:5px;">account where i post every flop and grilled cheese i'll ever make and post anything that comes to mind. i love the mundane. anything i'm into is slice of life shoujo to me </p>
+        <div id="buttonses">
+            <button id="morebutton" class="buttons"> <p class="btext">MORE STUFF</p></button>
+            <button id="enstarbutton" class="buttons"><p class="btext">ENSTARS</p></button>
+        </div>
+    </div>
+     <div id="extra" style="display: none;">
+        <div id="moreinfo" style="display: none;" >
+            <p>my favourite things in the world are seals(animal), skip and loafer and pokemon </p>
+            <p>currently big into <span>enstars</span></p>
+            <p><span>other media i kinda think ab rn:</span><br> ace attorney, splatoon3, op, aoppella, various shoujosei shonen and nintendo stuff etc
+        </p>
+        <p>love my oomfs if i see anything that reminds me of you i might post about it or send it to you or something even if we're not that close. please lmk if youre uncomfortable w that</p>
+        </div>
+
+        <div id="enstars" style="display: none;">
+            
+            <p> <span>akatsuki tetora tsukasa and adonis are my favs!</span>  characters i think about the most are !!class 3b + 3rd years in general. enstars is kind of unserious to me warning</p>
+            <p>fav pairings are kogakasa adosou narumika chiakuro keikuro ibahaji junmako + just whatever's funniest to me in the moment 
+             </p>
+            <div id="chiakii"><img id="chiaki" src="images/fuckasschiaki.jpg"></div>
+        </div>
+    </div>
+    
+</body>
+

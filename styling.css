@@ -1,0 +1,129 @@
+body {
+    background-color: #fdfdfd;
+}
+#allofu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+    width: 100%;
+    height: 100vh;
+    
+
+}
+#boxe {
+    display: flex;
+    flex-direction: column;
+    width:250px;
+    align-self: center;
+    align-items: center;
+    text-align: justify;
+    position: sticky;
+
+    justify-content: center;
+    text-wrap: x;
+
+    background-color: #ffffff;
+    padding: 1.5%;
+    border-radius: 2%;
+    box-shadow: 0 1px 2px 0 #deccccba, 0 1px 2px 0 #deccccba;
+}
+
+p {
+    font-family: 'Red Hat Text' , sans-serif;
+    font-size: 1em;
+    color: #3b1c1bce;
+}
+
+span {
+    color: #c55656;
+}
+
+#subtitle {
+    font-size: 0.80em;
+    color: #9c8181;
+}
+
+.buttons {
+    display:block;
+    border-width: 0px;
+    width: 250px;
+    transition: 0.3s;
+
+    background-color: #ffffff;
+}
+
+.buttons:hover {
+    background-color: blanchedalmond;
+    
+}
+
+.btext {
+    transition:0.3s;
+}
+
+.btext:hover {
+    color:#b76464;
+}
+
+#chimmy {
+    width: 50%;
+    height: 50%;
+    border-radius: 10%;
+    
+}
+
+.chimani {
+    animation:chimmove;
+    animation-duration: 0.3s;
+}
+
+@keyframes chimmove{
+    0% {transform:translateY(0);}
+    50% {transform: translateY(2%)}
+    85% {transform: translateY(-1%)}
+    100% {transform: translateY(0)}
+}
+
+#extra {
+    display: flex;
+    width:400px;
+    align-self: center;
+
+}
+
+#moreinfo {
+    background-color: blanchedalmond;
+    border-radius: 10%;
+    padding: 5%;
+}
+
+#enstars {
+    background-color: blanchedalmond;
+    border-radius: 10%;
+    padding: 5%;
+}
+
+#chiaki {
+    border-radius: 5%;
+    width: 40%;
+    z-index: 1;
+    transition: 1s;
+    margin-bottom: 0px;
+    opacity: 85%;
+    position: relative;
+    left: 100px;
+
+}
+
+#chiaki:hover {
+    content: url(images/fuckasschiaki2.jpg);
+    
+
+}
+
+@media (max-width:900px){
+    #allofu{
+        width:fit-content;
+    }}
+
