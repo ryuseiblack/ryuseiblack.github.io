@@ -125,5 +125,19 @@ span {
 @media (max-width:900px){
     #allofu{
         width:fit-content;
-    }}
+        margin: auto;
+        gap: 30px;
+    }
+
+    #boxe {
+        width: 100;
+        padding: 3%;
+        
+    }
+    #extra {
+        width: 380px;
+        margin-right: 10px;
+    }
+}
+
 
